@@ -18,19 +18,7 @@
 			$btnNumber			= $('.-game').find('.number'),
 			$btnResult			= $('.btn-result'),
 			$modalSuccess		= $('#modalSuccess'),
-			$modalDanger		= $('#modalDanger');
-
-		// Btn Modal
-		$btnCloseModal.click(function(e){ 
-			e.preventDefault();
-
-			var $this = $(this);
-
-			$this.parents('.modal').fadeToggle(200);
-			$body.removeClass("no-scroll");
-			$btnNumber.removeClass('active');
-
-		});
+			$modalDanger		= $('#modalDanger');		
 
 
 		// Btns Number
@@ -75,6 +63,19 @@
 			$body.addClass("no-scroll");
 
 		});	
+		
+
+		// Btn Close Modal
+		$btnCloseModal.click(function(e){ 
+			e.preventDefault();
+
+			var $this = $(this);
+
+			$this.parents('.modal').fadeToggle(200);
+			$body.removeClass("no-scroll");
+			$btnNumber.removeClass('active');
+
+		});
 
 	});
 
