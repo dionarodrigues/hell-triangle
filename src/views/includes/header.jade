@@ -1,0 +1,16 @@
+//- include ../mixins/mixins
+
+header.header-page(data-0="top: 0px" data-1000="top: -1000px") 
+	.container
+	.container
+		.brand
+			.brand__media 
+				img(src="assets/img/logo-triangle.svg", alt="Iceberg Simple Boilerplate", width="300px")
+			h1.brand__title Jogo Hell Triangle
+
+		.btns-group
+			a(onclick="skrollr.get().animateTo(1200)").btn.btn-primary.btn-play Jogar
+			a(href="#modalRules").btn.btn-secondary.btn-modal Regras do jogo
+
+	a(onclick="skrollr.get().animateTo(1200)").btn-scroll
+		span.icon.icon-arrow 

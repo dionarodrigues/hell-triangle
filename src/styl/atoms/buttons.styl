@@ -1,0 +1,104 @@
+/*
+* Butons
+* 
+*/
+
+
+// Mixin Button
+button( background )
+	position relative	
+	padding $space ($space/2)	
+	border-radius 5px
+	text-transform uppercase
+	background background
+	color #fff
+	transition .2s
+	pxtorem(font-size, 15)
+	font-family Montserrat
+	+above(sm)
+		padding $space
+		pxtorem(font-size, 18)
+
+	&:hover
+		color #fff
+		background lightness(background, 55%)
+
+.btn-primary	
+	button( $brand-success )
+	color $gray-dark
+	
+.btn-secondary	
+	button( $brand-danger )
+	display inline-block 
+	
+.btn-terciary	
+	button( $brand-primary )
+	display inline-block 
+	
+	
+
+// Btn scroll
+// --------------------------------------------------
+.btn-scroll 
+	position relative
+	display block
+	width 70px
+	height 50px
+	padding-top ($space/4)
+	pxtorem(font-size, 40)
+	margin ($space*2) auto 0
+	animation jump 1.5s ease 0s infinite normal
+	color $brand-success
+	
+	&:hover
+		color lightness($brand-success, 55%)
+	
+
+
+// Btn Close
+// --------------------------------------------------
+.btn-close
+	display block
+	width 55px
+	height 55px
+	padding ($space/2)
+	border-radius 4px
+	z-index 300
+	background-color transparent
+	
+	.icon
+		display block
+		width 100%
+		height 6px
+		position relative
+		margin-top 16px
+		background-color transparent
+		border-radius 10px
+		transition all .2s ease-in-out
+		
+		&:before
+		&:after
+			content ""
+			display block
+			position absolute
+			left 0
+			width 100%
+			height 6px
+			background $white
+			border-radius 10px
+			transition all .3s ease-in-out
+			top 0
+			
+		&:before
+			transform rotate(45deg)
+			
+		&:after
+			transform rotate(-45deg)
+			
+	
+// Btn Link
+.btn-link
+	display inline-block
+	margin-top ($space*2)
+	pxtorem(font-size, 18)
+	text-transform uppercase

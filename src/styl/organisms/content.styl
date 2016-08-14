@@ -1,0 +1,47 @@
+
+// main page
+.main-page
+	text-align center
+	
+
+//Content Highlight
+.content-highlight
+	color $white
+	
+	p 
+		margin-bottom ($space*3)
+		pxtorem(font-size, 25px)
+
+
+// Content Result
+.content-result
+	position fixed
+	width 100%
+	left 0
+	padding $space
+	.numbers-list		
+		position relative
+		width 300px
+		margin 0 auto
+		+above(sm)
+			width 500px
+
+	.number				
+		padding $space ($space/2)
+		color rgba($white, .2)
+		pxtorem(font-size, 25)		
+		+above(sm)		
+			padding $space ($space*1.5)
+			pxtorem(font-size, 40)
+		
+		&.active
+			color rgba($white, 1)
+
+// Bg Stars
+.stars
+	position fixed
+	top 0
+	left 0
+	width 100%
+	height 150%
+	background url(../img/bg-stars.png) center top repeat

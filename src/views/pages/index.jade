@@ -1,0 +1,71 @@
+//- include ../mixins/mixins
+
+extends ../layouts/layout
+
+block content
+	.stars(data-start="top: 0px; opacity: 1" data-4000="top: -500px; opacity: 0")
+
+	.container
+		main.main-page
+			
+			//- Game
+			.numbers-list.-game(data-0="top: 150%;" data-1000="top: 50%;" data-2500="top: 50%;" data-4000="top: -100%;")
+				.row
+					a(href="").number 5
+				.row
+					a(href="").number 1
+					a(href="").number 3
+				.row
+					a(href="").number 4
+					a(href="").number 7
+					a(href="").number 10
+				.row
+					a(href="").number 0
+					a(href="").number 3
+					a(href="").number 2
+					a(href="").number 1
+				.row
+					a(href="").number 10
+					a(href="").number 13
+					a(href="").number 11
+					a(href="").number 5
+					a(href="").number 15
+				a(onclick="skrollr.get().animateTo(3550)").btn-link.btn-result Ver Solução
+
+
+			//- Result of the Game
+			.content-result(data-3000="top: 1000px" data-3500="top: 100px" data-4000="top: -1000px")
+				.content-highlight
+					h3.title Solução do Hell Triangle
+
+				.numbers-list
+					.row
+						span.number.active 5
+					.row
+						span.number 1
+						span.number.active 3
+					.row
+						span.number 4
+						span.number 7
+						span.number.active 10
+					.row
+						span.number 0
+						span.number 3
+						span.number 2
+						span.number.active 1
+					.row
+						span.number 10
+						span.number 13
+						span.number 11
+						span.number 5
+						span.number.active 15
+
+
+	//- Modal Rules
+	include ../includes/modals/rules
+
+	//- Modal Success
+	include ../includes/modals/success
+
+	//- Modal Danger
+	include ../includes/modals/danger

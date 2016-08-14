@@ -1,0 +1,28 @@
+.modal#modalRules
+	.modal__content
+		a(href="").btn-close
+			.icon
+		.modal__title Regras do jogo
+		p Dado um triângulo de números, encontre o maior resultado da soma entre os números. Inicie de cima para baixo. 
+		p Você deverá escolher um único número por linha.
+		p Os números da linha seguinte só poderão ser escolhidos se eles forem próximos ao número da linha anterior. Confira o exemplo abaixo:
+
+		.numbers-list
+			.row
+				span.number 6
+			.row
+				span.number 3
+				span.number 5
+			.row
+				span.number 9
+				span.number 7
+				span.number 1
+			.row
+				span.number 4
+				span.number 6
+				span.number 8
+				span.number 4
+
+		p.demo__description Nesse triângulo, o maior resultado da soma entre os números é 6+5+7+8=26. O número 3, na segunda linha, pode ser somado com 9 e 7, mas não 1.
+
+

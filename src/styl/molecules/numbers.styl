@@ -1,0 +1,114 @@
+/*
+* Numbers
+* 
+*/
+
+
+
+.numbers-list
+	cf()
+	width 300px
+	
+	.row
+		cf()
+		margin 0 auto
+		
+		&:nth-child(1)
+			width 20%
+		
+		&:nth-child(2)
+			width 40%
+			.number
+				column(1/2, gutter: 0)
+				
+		&:nth-child(3)
+			width 60%
+			.number
+				column(1/3, gutter: 0)
+				
+		&:nth-child(4)
+			width 80%
+			.number
+				column(1/4, gutter: 0)
+				
+		&:nth-child(5)
+			.number
+				column(1/5, gutter: 0)
+
+
+	.number
+		position relative
+		display inline-block
+		padding ($space/2)
+		font-family Montserrat
+		pxtorem(font-size, 20)
+		color $gray-lighter	
+		outline 0	
+
+	// Game
+	&.-game	
+		position fixed
+		top 50%
+		left 50%
+		width 300px
+		height 360px
+		margin-left -150px
+		margin-top -180px
+		+above(sm)
+			width 600px
+			margin-top -250px
+			margin-left -300px
+	
+		.number	
+			padding $space ($space/2)
+			transition .2s
+			+above(sm)		
+				padding $space ($space*2)
+				pxtorem(font-size, 45)				
+			
+			&:hover
+			&.active
+				color $gray-dark
+				&:before
+					background $brand-success
+			
+			&:before
+			&:after
+				content ''
+				display inline-block
+				position absolute
+				z-index -1
+				left 50%
+				top 50%
+				border-radius 50px	
+				animation pulse 1.5s ease 0s infinite normal
+				transition .2s
+				
+			&:before
+				margin-top -20px
+				margin-left -20px
+				width 40px
+				height 40px
+				border 1px solid rgba($white, .1)
+				+above(sm)
+					margin-top -35px
+					margin-left -35px
+					width 70px
+					height 70px
+				
+			&:after
+				margin-top -25px
+				margin-left -25px
+				width 50px
+				height 50px
+				border 5px solid rgba($white, .05)
+				+above(sm)
+					margin-top -45px
+					margin-left -45px
+					width 90px
+					height 90px
+			
+	
+	
+	
+	

@@ -1,0 +1,82 @@
+/*
+* Modals
+* 
+*/
+
+.modal
+	display none
+	position fixed
+	width 100%
+	height 100%
+	top 0
+	left 0
+	padding 100px 0	
+	z-index 100 
+	overflow-y scroll
+	background rgba($brand-primary, .5)	
+
+	.modal__content
+		cf()
+		position relative
+		width 700px
+		max-width 90%
+		margin 0 auto
+		color $gray-dark	
+		pxtorem(font-size, 18)
+		text-align center
+		background $white
+		padding ($space*2)
+		border-radius 5px	
+		
+		.btn-close
+			position absolute
+			top -70px
+			right 0
+			
+			&:hover
+				background $brand-primary
+		
+	.modal__title
+		font-weight 600
+		pxtorem(font-size, 22)
+		
+	.modal__icon
+		display inline-block
+		margin-bottom $space
+		pxtorem(font-size, 80)
+	
+	// Success	
+	&#modalSuccess
+		background rgba($brand-success, .5)
+		
+		.modal__content
+			border 3px solid lightness($brand-success, 40%)
+			
+		.modal__icon
+			color lightness($brand-success, 40%)
+		
+		.btn-close
+			&:hover
+				background lightness($brand-success, 40%)
+	
+	// Danger	
+	&#modalDanger
+		background rgba($brand-danger, .6)
+		
+		.modal__content
+			border 3px solid lightness($brand-danger, 40%)
+			
+		.modal__icon
+			color $brand-danger
+		
+		.btn-close
+			&:hover
+				background lightness($brand-danger, 40%)
+				
+	// Rules
+	&#modalRules		
+		.numbers-list
+			margin $space auto
+			
+		.number
+			color $gray-dark	

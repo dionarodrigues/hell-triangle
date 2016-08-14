@@ -1,0 +1,20 @@
+.header-page
+	position fixed
+	width 100%
+	z-index 20
+	text-align center
+	margin-top -50px
+	+above(sm)
+		margin-top 50px		
+	
+	.btn
+		margin ($space*2) ($space/4)
+		
+		& ~ .btn 
+			+above(sm)
+				margin-left $space
+				
+	.btn-scroll
+		margin-top -40px
+		+above(sm)
+			margin-top 0
