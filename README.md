@@ -1,4 +1,4 @@
-![android-chrome-192x192](//diogorodrigues.com.br/hell-triangle/assets/img/logo-triangle.svg)
+![android-chrome-192x192](http://diogorodrigues.com.br/hell-triangle/assets/img/logo-triangle.svg)
 # Hell Triangle
 A simple game to test the reasoning.
 
