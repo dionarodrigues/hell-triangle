@@ -1,6 +1,6 @@
 ![Game Hell Triangle Logo](http://diogorodrigues.com.br/hell-triangle/assets/img/logo-triangle.png)
 # Hell Triangle
-A simple game to test the reasoning.
+A simple game to test the reasoning. [Go to the game Hell Triangle](http://diogorodrigues.com.br/hell-triangle/). 
 
 I used the [Iceberg Boilerplate](https://github.com/diogorodrigues/iceberg-boilerplate) to develop the game. 
 
