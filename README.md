@@ -11,8 +11,8 @@ Then you need to install the dependencies to run this boilerplate:
 
 ```
 > # Clone this repository
-> $ git clone https://github.com/diogorodrigues/iceberg-boilerplate.git
-> $ cd iceberg-boilerplate
+> $ git clone https://github.com/diogorodrigues/hell-triangle.git
+> $ cd hell-triangle
 > 
 > # install dependencies
 > $ npm install
