@@ -8,25 +8,10 @@ html(lang="pt-br")
 		title #{pageTitle}
 		meta(charset='UTF-8')
 		meta(http-equiv='X-UA-Compatible', content='IE=edge')
-		meta(name='description' content='A simple game to test the reasoning.')
+		meta(name='description' content='Documentation of the Game Hell Triangle')
 		meta(name='viewport' content='width=device-width, initial-scale=1.0')
 		link(rel='stylesheet', href='assets/css/main.css')
 
-		//- Open Graph
-		meta(property='og:type', content='Game')
-		meta(property='og:title', content='Game Hell Triangle')
-		meta(property='og:site_name', content='Diogo Rodrigues')
-		meta(property='og:url', content='Game Hell Triangle')
-		meta(property='og:image', content='http://diogorodrigues.com.br/hell-triangle/assets/img/facebook-triangle.png')
-		meta(property='og:description', content='A simple game to test the reasoning.')
-
-		//- Twitter Card
-		meta(name='twitter:card' content="summary")
-		meta(name='twitter:site' content="@_diogorodrigues")
-		meta(name='twitter:title' content="Game Hell Triangle" )
-		meta(name='twitter:description' content="A simple game to test the reasoning.")
-		meta(name='twitter:image' content="http://diogorodrigues.com.br/hell-triangle/assets/img/facebook-triangle.png")
-		
 		//- Favicon		
 		link(rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png")
 		link(rel="icon" type="image/png" href="assets/img/favicon/favicon-32x32.png" sizes="32x32")
@@ -37,19 +22,10 @@ html(lang="pt-br")
 
 		link(href='https://fonts.googleapis.com/css?family=Montserrat:400|Open+Sans:400,600' rel='stylesheet' type='text/css')
 		
-	body.no-scroll(data-start="background:rgba(33, 28, 51, 1);" data-3000="background:rgba(10, 60, 109, 1);" data-4000="background:rgba(190, 235, 159, 1);")
-
-		//- Loader
-		include ../includes/loader
-
-		//- Header
-		include ../includes/header
+	body
 
 		//- Content
 		block content
-		
-		//- Footer
-		include ../includes/footer
 
 		script(src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous")
 		script(async src='assets/js/main.js')

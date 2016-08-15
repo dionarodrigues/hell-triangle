@@ -1,0 +1,48 @@
+//- include ../mixins/mixins
+extends ../layouts/basic-layout
+
+block vars
+	- var pageTitle = 'Documentation'
+
+block content
+	.container
+		h1 Documentação do desenvolvimento do Jogo
+
+		h2 HTML
+		p Utilizei todo o poder do HTML5 para melhorar a semântica e a acessibilidade da página:
+		ul.basic-list
+			li Novas TAGs
+			li WAI-ARIA para tornar o código mais semântico, melhorando a integração com leitores de telas, por exemplo
+			li Utilizei o Template Engine Jade para melhorar o desenvolvimento e organizar os arquivos HTML
+
+		h2 CSS
+		p Organização do CSS utilizando diversos conceitos, tais como:
+		ul.basic-list
+			li Atomic Design
+			li BEM
+			li CSSOO
+			li Pré-processador stylus para melhorar o desenvolvimento e organizar os arquivos CSS
+
+		h2 Imagens
+		ul.basic-list
+			li Utilizando o gulp, otimizei todas as imagens do projeto
+			li Utilizei SVG 
+			li Utilizei Icon Fonts
+
+		h2 JS
+		ul.basic-list
+			li Incluí todo o JS em uma IIFE para manter o código em um escopo local
+			li Organizei o código declarando as variáveis antes de tudo, também para otimizar a performance
+
+		hr
+
+		p
+			strong
+				| Para saber mais sobre o Iceberg Boilerplate, que desenvolvi com Gulp, utilizado nesse projeto, acesse 
+				a(href="https://github.com/diogorodrigues/hell-triangle") repositório no Github
+				|.
+		p
+			strong
+				| Para acompanhar o desenvolvimento desse jogo, visite o 
+				a(href="https://github.com/diogorodrigues/hell-triangle") Hell Triangle no Github
+				|.

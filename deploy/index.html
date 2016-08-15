@@ -1,111 +1,113 @@
 <!DOCTYPE html>
-<head>
-  <title>Game Hell Triangle</title>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="A simple game to test the reasoning.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <meta property="og:type" content="Game">
-  <meta property="og:title" content="Game Hell Triangle">
-  <meta property="og:site_name" content="Diogo Rodrigues">
-  <meta property="og:url" content="Game Hell Triangle">
-  <meta property="og:image" content="http://diogorodrigues.com.br/hell-triangle/assets/img/facebook-triangle.png">
-  <meta property="og:description" content="A simple game to test the reasoning.">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@_diogorodrigues">
-  <meta name="twitter:title" content="Game Hell Triangle">
-  <meta name="twitter:description" content="A simple game to test the reasoning.">
-  <meta name="twitter:image" content="http://diogorodrigues.com.br/hell-triangle/assets/img/facebook-triangle.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" href="assets/img/favicon/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="assets/img/favicon/favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="assets/img/favicon/manifest.json">
-  <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="theme-color" content="#ffffff">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Open+Sans:400,600" rel="stylesheet" type="text/css">
-</head>
-<body data-start="background:rgba(33, 28, 51, 1);" data-3000="background:rgba(10, 60, 109, 1);" data-4000="background:rgba(190, 235, 159, 1);" class="no-scroll">
-  <div class="loader">
-    <div class="loader__infos">
-      <div class="loader__media"> <img src="assets/img/logo-triangle.svg" alt="Iceberg Simple Boilerplate" width="300px"></div>
-      <div class="loader__info">Carregando</div>
+<html lang="pt-br">
+  <head>
+    <title>Game Hell Triangle</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A simple game to test the reasoning.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <meta property="og:type" content="Game">
+    <meta property="og:title" content="Game Hell Triangle">
+    <meta property="og:site_name" content="Diogo Rodrigues">
+    <meta property="og:url" content="Game Hell Triangle">
+    <meta property="og:image" content="http://diogorodrigues.com.br/hell-triangle/assets/img/facebook-triangle.png">
+    <meta property="og:description" content="A simple game to test the reasoning.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@_diogorodrigues">
+    <meta name="twitter:title" content="Game Hell Triangle">
+    <meta name="twitter:description" content="A simple game to test the reasoning.">
+    <meta name="twitter:image" content="http://diogorodrigues.com.br/hell-triangle/assets/img/facebook-triangle.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="assets/img/favicon/manifest.json">
+    <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Open+Sans:400,600" rel="stylesheet" type="text/css">
+  </head>
+  <body data-start="background:rgba(33, 28, 51, 1);" data-3000="background:rgba(10, 60, 109, 1);" data-4000="background:rgba(190, 235, 159, 1);" class="no-scroll">
+    <div class="loader">
+      <div class="loader__infos">
+        <div class="loader__media"> <img src="assets/img/logo-triangle.svg" alt="Iceberg Simple Boilerplate" width="300px"></div>
+        <div class="loader__info">Carregando</div>
+      </div>
     </div>
-  </div>
-  <header data-0="top: 0px" data-1000="top: -1000px" class="header-page"> 
-    <div class="container"></div>
-    <div class="container">
-      <div class="brand">
-        <div class="brand__media"> <img src="assets/img/logo-triangle.svg" alt="Iceberg Simple Boilerplate" width="300px"></div>
-        <h1 class="brand__title">Jogo Hell Triangle</h1>
-      </div>
-      <div class="btns-group"><a onclick="skrollr.get().animateTo(1200)" class="btn btn-primary btn-play">Jogar</a><a href="#modalRules" class="btn btn-secondary btn-modal">Regras do jogo</a></div>
-    </div><a onclick="skrollr.get().animateTo(1200)" class="btn-scroll"><span class="icon icon-arrow"> </span></a>
-  </header>
-  <div data-start="top: 0px; opacity: 1" data-4000="top: -500px; opacity: 0" class="stars"></div>
-  <div class="container">
-    <main class="main-page">
-      <div data-0="top: 150%;" data-1000="top: 50%;" data-2500="top: 50%;" data-4000="top: -100%;" class="numbers-list -game">
-        <div class="row"><a href="" class="number">5</a></div>
-        <div class="row"><a href="" class="number">1</a><a href="" class="number">3</a></div>
-        <div class="row"><a href="" class="number">4</a><a href="" class="number">7</a><a href="" class="number">10</a></div>
-        <div class="row"><a href="" class="number">0</a><a href="" class="number">3</a><a href="" class="number">2</a><a href="" class="number">1</a></div>
-        <div class="row"><a href="" class="number">10</a><a href="" class="number">13</a><a href="" class="number">11</a><a href="" class="number">5</a><a href="" class="number">15</a></div><a onclick="skrollr.get().animateTo(3550)" class="btn-link btn-result">Ver Solução</a>
-      </div>
-      <div data-3000="top: 1000px" data-3500="top: 100px" data-4000="top: -1000px" class="content-result">
-        <div class="content-highlight">
-          <h3 class="title">Solução do Hell Triangle</h3>
+    <header data-0="top: 0px" data-1000="top: -1000px" role="banner" class="header-page"> 
+      <div class="container">
+        <div class="brand">
+          <div class="brand__media"> <img src="assets/img/logo-triangle.svg" alt="Jogo Hell Triangle" width="300px"></div>
+          <h1 class="brand__title">Jogo Hell Triangle</h1>
         </div>
+        <nav role="navigation" class="btns-group"><a onclick="skrollr.get().animateTo(1200)" class="btn btn-primary btn-play">Jogar</a><a href="#modalRules" aria-haspopup="true" class="btn btn-secondary btn-modal">Regras do jogo</a></nav>
+      </div><a onclick="skrollr.get().animateTo(1200)" aria-label="Scroll" class="btn-scroll"><span class="icon icon-arrow"> </span></a>
+    </header>
+    <div data-start="top: 0px; opacity: 1" data-4000="top: -500px; opacity: 0" class="stars"></div>
+    <div class="container">
+      <main role="main" class="main-page">
+        <div data-0="top: 150%;" data-1000="top: 50%;" data-2500="top: 50%;" data-4000="top: -100%;" class="numbers-list -game">
+          <div class="row"><a href="" class="number">5</a></div>
+          <div class="row"><a href="" class="number">1</a><a href="" class="number">3</a></div>
+          <div class="row"><a href="" class="number">4</a><a href="" class="number">7</a><a href="" class="number">10</a></div>
+          <div class="row"><a href="" class="number">0</a><a href="" class="number">3</a><a href="" class="number">2</a><a href="" class="number">1</a></div>
+          <div class="row"><a href="" class="number">10</a><a href="" class="number">13</a><a href="" class="number">11</a><a href="" class="number">5</a><a href="" class="number">15</a></div><a onclick="skrollr.get().animateTo(3550)" class="btn-link btn-result">Ver Solução</a>
+        </div>
+        <div data-3000="top: 1000px" data-3500="top: 100px" data-4000="top: -1000px" class="content-result">
+          <div class="content-highlight">
+            <h3 class="title">Solução do Hell Triangle</h3>
+          </div>
+          <div class="numbers-list">
+            <div class="row"><span class="number active">5</span></div>
+            <div class="row"><span class="number">1</span><span class="number active">3</span></div>
+            <div class="row"><span class="number">4</span><span class="number">7</span><span class="number active">10</span></div>
+            <div class="row"><span class="number">0</span><span class="number">3</span><span class="number">2</span><span class="number active">1</span></div>
+            <div class="row"><span class="number">10</span><span class="number">13</span><span class="number">11</span><span class="number">5</span><span class="number active">15</span></div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div id="modalRules" role="dialog" class="modal">
+      <div class="modal__content"><a href="" class="btn-close">
+          <div class="icon"></div></a>
+        <div class="modal__title">Regras do jogo</div>
+        <p>Dado um triângulo de números, encontre o maior resultado da soma entre os números. Inicie de cima para baixo. </p>
+        <p>Você deverá escolher um único número por linha.</p>
+        <p>Os números da linha seguinte só poderão ser escolhidos se eles forem próximos ao número da linha anterior. Confira o exemplo abaixo:</p>
         <div class="numbers-list">
-          <div class="row"><span class="number active">5</span></div>
-          <div class="row"><span class="number">1</span><span class="number active">3</span></div>
-          <div class="row"><span class="number">4</span><span class="number">7</span><span class="number active">10</span></div>
-          <div class="row"><span class="number">0</span><span class="number">3</span><span class="number">2</span><span class="number active">1</span></div>
-          <div class="row"><span class="number">10</span><span class="number">13</span><span class="number">11</span><span class="number">5</span><span class="number active">15</span></div>
+          <div class="row"><span class="number">6</span></div>
+          <div class="row"><span class="number">3</span><span class="number">5</span></div>
+          <div class="row"><span class="number">9</span><span class="number">7</span><span class="number">1</span></div>
+          <div class="row"><span class="number">4</span><span class="number">6</span><span class="number">8</span><span class="number">4</span></div>
         </div>
+        <p class="demo__description">Nesse triângulo, o maior resultado da soma entre os números é 6+5+7+8=26. O número 3, na segunda linha, pode ser somado com 9 e 7, mas não 1.</p>
       </div>
-    </main>
-  </div>
-  <div id="modalRules" class="modal">
-    <div class="modal__content"><a href="" class="btn-close">
-        <div class="icon"></div></a>
-      <div class="modal__title">Regras do jogo</div>
-      <p>Dado um triângulo de números, encontre o maior resultado da soma entre os números. Inicie de cima para baixo. </p>
-      <p>Você deverá escolher um único número por linha.</p>
-      <p>Os números da linha seguinte só poderão ser escolhidos se eles forem próximos ao número da linha anterior. Confira o exemplo abaixo:</p>
-      <div class="numbers-list">
-        <div class="row"><span class="number">6</span></div>
-        <div class="row"><span class="number">3</span><span class="number">5</span></div>
-        <div class="row"><span class="number">9</span><span class="number">7</span><span class="number">1</span></div>
-        <div class="row"><span class="number">4</span><span class="number">6</span><span class="number">8</span><span class="number">4</span></div>
+    </div>
+    <div id="modalSuccess" role="dialog" class="modal">
+      <div class="modal__content"><a href="" class="btn-close">
+          <div class="icon"></div></a><span class="modal__icon icon-premium"> </span>
+        <div class="modal__title">Parabéns! Você acertou!</div>
+        <p>Você conseguiu resolver o problema do Hell Triangle. </p>
+        <p>Dica: Que tal desafiar seus amigos criando suas próprias regras da dinâmica de tentativas?</p>
       </div>
-      <p class="demo__description">Nesse triângulo, o maior resultado da soma entre os números é 6+5+7+8=26. O número 3, na segunda linha, pode ser somado com 9 e 7, mas não 1.</p>
     </div>
-  </div>
-  <div id="modalSuccess" class="modal">
-    <div class="modal__content"><a href="" class="btn-close">
-        <div class="icon"></div></a><span class="modal__icon icon-premium"> </span>
-      <div class="modal__title">Parabéns! Você acertou!</div>
-      <p>Você conseguiu resolver o problema do Hell Triangle. </p>
-      <p>Dica: Que tal desafiar seus amigos criando suas próprias regras da dinâmica de tentativas?</p>
-    </div>
-  </div>
-  <div id="modalDanger" class="modal">
-    <div class="modal__content"><a href="" class="btn-close">
-        <div class="icon"></div></a><span class="modal__icon icon-sad"> </span>
-      <div class="modal__title">Que pena! Você não acertou!</div>
-      <p>Continue tentando resolver o problema do Hell Triangle. </p>
-      <p>Dica: Faça o teste com seus amigos também criando suas próprias regras da dinâmica de tentativas.</p>
-    </div>
-  </div>
-  <footer data-3800="top: 1000px" data-4000="top: 200px" data-4100="top: 200px" class="footer-page">
-    <div class="container">
-      <div class="infos">
-        <div class="infos__description">Desenvolvi esse jogo utilizando um boilerplate também criado por mim. <br /> Saiba mais acessando o <a href="https://github.com/diogorodrigues/iceberg-boilerplate">Iceberg Boilerplate.</a></div><a href="https://github.com/diogorodrigues/hell-triangle" class="btn btn-terciary">Fork me on github</a>
+    <div id="modalDanger" role="dialog" class="modal">
+      <div class="modal__content"><a href="" class="btn-close">
+          <div class="icon"></div></a><span class="modal__icon icon-sad"> </span>
+        <div class="modal__title">Que pena! Você não acertou!</div>
+        <p>Continue tentando resolver o problema do Hell Triangle. </p>
+        <p>Dica: Faça o teste com seus amigos também criando suas próprias regras da dinâmica de tentativas.</p>
       </div>
-      <div class="credits">By <a href="http://www.diogorodrigues.com.br">Diogo Rodrigues</a></div>
     </div>
-  </footer>
-  <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
-  <script async src="assets/js/main.js"></script>
-</body>
+    <footer data-3800="top: 1000px" data-4000="top: 150px" data-4100="top: 200px" role="contentinfo" class="footer-page">
+      <div class="container">
+        <div class="infos">
+          <p class="infos__description">Desenvolvi esse jogo utilizando um boilerplate também criado por mim. <br /> Saiba mais acessando o <a href="https://github.com/diogorodrigues/iceberg-boilerplate">Iceberg Boilerplate.</a></p>
+          <p class="infos__description">Para os efeitos, utilizei o plugin <a href="https://github.com/Prinzhorn/skrollr">Skrollr.</a></p><a href="https://github.com/diogorodrigues/hell-triangle" class="btn btn-terciary">Fork me on github</a>
+        </div>
+        <div class="credits">By <a href="http://www.diogorodrigues.com.br">Diogo Rodrigues</a></div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script async src="assets/js/main.js"></script>
+  </body>
+</html>
